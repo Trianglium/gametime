@@ -1,0 +1,19 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    {% include "_bootstrap_head.html" %}
+    <title>{% block title %}{% if title %}{{ title }}{% else %}GameTime{% endif %}{% endblock %}</title>
+    <style>
+    </style>
+</head>
+<body>
+{% include "_navbar.html" %}
+<div class="container-fluid pt-3">
+    {% block content %}
+    {% endblock %}
+</div>
+{% include "_bootstrap_scripts.html" %}
+{% block scripts %}
+{% endblock %}
+</body>
+</html>
