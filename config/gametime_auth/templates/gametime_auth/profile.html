@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col">
+        <h2>Profile</h2>
+        <p>Logged in as {{ request.user.email }}</p>
+    </div>
+</div>
+{% endblock %}
