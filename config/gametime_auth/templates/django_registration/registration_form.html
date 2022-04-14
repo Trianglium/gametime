@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block title %}Register for GameTime{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col col-md-6">
+       <h2>Register for GameTime</h2>
+        {% crispy form %}
+    </div>
+</div>
+{% endblock %}
