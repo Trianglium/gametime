@@ -1,0 +1,5 @@
+Hi,
+
+{{ creator.email }} has invited you to play {{ game_time.game.name }} at {{ game_time.start_time }}
+
+To confirm your attendance, please visit {{ game_time_url }}

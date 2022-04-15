@@ -1,0 +1,9 @@
+Bro,
+The Game Session:  {{ game_time.game.title }}, will be starting at {{ game_time.start_time }}{% endif %}
+
+You can see who else is attending at {{ game_time_url }}
+
+Get on already.
+
+Thanks,
+GameTime Scheduling Bot

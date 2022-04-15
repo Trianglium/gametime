@@ -1,0 +1,1 @@
+{{ game_time_invitation.invitee.email }} has update their attendance.

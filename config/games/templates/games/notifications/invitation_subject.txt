@@ -1,0 +1,1 @@
+Invitation to play {{ game_time.game.name }}

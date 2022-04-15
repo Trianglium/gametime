@@ -1,0 +1,11 @@
+Hi,
+
+{{ game_time_invitation.invitee.email }} has updated their attendance status to your Game Session for
+{{ game_time.game.name }}.
+
+They will{% if not is_attending %} not{% endif %} be attending your Game Session.
+
+To see the full list of attendees, please visit {{ game_time_url }}
+
+Thanks,
+GameTime Scheduling Bot
