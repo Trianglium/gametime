@@ -1,0 +1,1 @@
+GameTime Account Activation - this link will expire in {{ expiration_days }} days
