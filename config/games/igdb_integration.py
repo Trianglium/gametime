@@ -30,6 +30,8 @@ def fill_game_details(game):
     igdb_client = get_client_from_settings()
     game_details = igdb_client.get_by_id(game.id)
     game.name = game_details.name
+    game.summary = game_details.summary
+    game.url = game_details.url
     game.genres.clear()
     for genre in get_or_create_genres(game_details.genres):
         game.genres.add(genre)
@@ -62,6 +64,8 @@ def search_and_save(search):
             id=igdb_game.id,
             defaults={
                 "name": igdb_game.name,
+                "summary": igdb_game.summary,
+                "url": igdb_game.url,
                 "genres": igdb_game.genres,
             },
         )

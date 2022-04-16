@@ -22,17 +22,17 @@ class Genre(models.Model):
         ordering = ["name"]
 
     name = models.TextField(unique=True)
-    igdb_id = models.TextField(unique=True)
 
     def __str__(self):
-        return f'{self.igdb_id}, {self.name}'
+        return f'{self.name}'
 
 class Game(models.Model):
     class Meta:
-        ordering = ["title", "year"]
+        ordering = ["title"]
 
     name = models.TextField()
-    igdb_id = models.SlugField(unique=True)
+    summary = models.TextField()
+    url = models.SlugField(unique=True)
     genres = models.ManyToManyField(Genre, related_name="games")
 
     def __str__(self):
